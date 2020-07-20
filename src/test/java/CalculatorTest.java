@@ -16,11 +16,11 @@ public class CalculatorTest {
     public void canAdd() {
         assertEquals(5, calculator.add(2, 3));
     }
-//
-//    @Test
-//    public void canSubtract() {
-//        assertEquals(1, calculator.subtract(4, 3));
-//    }
+
+    @Test
+    public void canSubtract() {
+        assertEquals(1, calculator.subtract(4, 3));
+    }
 //
 //    @Test
 //    public void canMultiply() {
