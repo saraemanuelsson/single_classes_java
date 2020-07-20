@@ -18,7 +18,8 @@ public class WaterBottleTest {
 
     @Test
     public void canDrink() {
-        assertEquals(90, waterBottle.drink());
+        waterBottle.drink();
+        assertEquals(90, waterBottle.getVolume());
     }
 
     @Test
@@ -27,6 +28,11 @@ public class WaterBottleTest {
         assertEquals(0, waterBottle.getVolume());
     }
 
-
-
+    @Test
+    public void canFill() {
+        waterBottle.drink();
+        waterBottle.fill();
+        assertEquals(100, waterBottle.getVolume());
+    }
+    
 }
