@@ -21,5 +21,12 @@ public class WaterBottleTest {
         assertEquals(90, waterBottle.drink());
     }
 
+    @Test
+    public void canEmpty() {
+        waterBottle.empty();
+        assertEquals(0, waterBottle.getVolume());
+    }
+
+
 
 }
