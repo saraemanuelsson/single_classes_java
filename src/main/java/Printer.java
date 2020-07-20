@@ -18,8 +18,10 @@ public class Printer {
 
     public void print(int pages, int copies) {
         int paperNeeded = pages * copies;
-        if (this.paper >= paperNeeded) {
+        int tonerNeeded = paperNeeded;
+        if (this.paper >= paperNeeded && this.toner >= tonerNeeded) {
             this.paper -= paperNeeded;
+            this.toner -= tonerNeeded;
         }
     }
 }
