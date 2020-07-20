@@ -8,12 +8,17 @@ public class PrinterTest {
 
     @Before
     public void before() {
-        printer = new Printer(20);
+        printer = new Printer(20, 50);
     }
 
     @Test
     public void hasPaper() {
         assertEquals(20, printer.getPaper());
+    }
+
+    @Test
+    public void hasToner() {
+        assertEquals(50, printer.getToner());
     }
 
     @Test
